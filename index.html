@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-title">Weather Dashboard</h1>
+    </header>
+    <main class="page-container">
+      <section class="section search-section">
+        <h2 class="section-title">Search for a city:</h2>
+        <form class="city-form">
+          <input type="text" id="city-input" placeholder="San Diego" required />
+          <button type="submit" class="btn btn-submit">Search</button>
+        </form>
+        <div class="buttons-container"></div>
+      </section>
+      <section class="section dashboard-section">
+        <div class="weather-today-container">
+          <!-- <div class="weather-today">
+            <div class="part-head today-head">
+              <h2 class="city-name">Atlanta 31/12/2010</h2>
+              <img
+                src="http://openweathermap.org/img/wn/10d.png"
+                alt="weather icon"
+              />
+            </div>
+            <div class="weather-info">
+              <p class="temp">Temp: <span class="showInfoshowTemp"></span></p>
+              <p class="wind">
+                Wind: <span class="showInfoshowWindSpeed"></span>
+              </p>
+              <p class="humidity">
+                Humidity: <span class="showInfoshowHumidity"></span>
+              </p>
+              <p class="uvi">
+                UV Index: <span class="showInfo showUvi"></span>
+              </p>
+            </div>
+          </div> -->
+        </div>
+        <div class="forecast-info" style="display: none">
+          <h2 class="part-title">5-Day Forcast:</h2>
+          <div class="forecast-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
